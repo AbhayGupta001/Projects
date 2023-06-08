@@ -1,0 +1,86 @@
+/* By using Grid */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container{
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(3,30%);
+    grid-auto-rows: minmax(auto,auto);
+    padding: 20px;
+    justify-content: center;
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    object-fit: cover;
+}
+
+/* Selecting first col in a 3 col grid */
+/* .card:nth-child(3n-2) img{
+    filter: grayscale(0%);
+} */
+
+/* First row in grid */
+/* .card:nth-child(-n+3) img{
+    filter: grayscale(0%);
+} */
+
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+    filter: drop-shadow(0 0 10px #333);
+}
+
+.card:hover img{
+    filter: grayscale(0%);
+}
+
+.card .text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.card:hover .text{
+    opacity: 1;
+    transform: scale(1.03);
+}

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+
+    --dk-violet: hsl(268, 75%, 9%);
+    --lt-violet: hsl(268, 47%, 21%);
+    --lt-violet2: hsl(281, 89%, 26%);
+    --vb-violet: hsl(285, 91%, 52%);
+    --vb-violet2: hsl(290, 70%, 36%);
+  
+    --vb-yellow: hsl(52, 100%, 62%);
+  
+  
+    --pl-white: hsl(0, 0%, 100%);
+  
+    --vb-cyan: hsl(176, 100%, 44%);
+    --vb-cyan2: hsl(177, 92%, 70%);
+    --dk-text: hsl(198, 20%, 13%);
+}
+
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background: #209cff;
+}
+
+h1{
+    color: white;
+    background-color: rgba(255, 255, 255, .1);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container{
+    width: 90%;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, .1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+}
+
+.output-container{
+    width: 60%;
+    display: flex;
+    gap: 1rem;
+}
+
+input[pwd-display]{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.93);
+    color: rgba(0, 0, 0,0.7);
+    padding: 0.8rem 1.5rem;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 25px;
+    border: none;
+}
+
+input[pwd-display]::placeholder{
+    color: rgba(0, 0, 0,0.7);
+}
+
+.copy-btn{
+    background-color: rgba(255, 255, 255, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .4rem;
+    border-radius: 50%;
+    border: none;
+}
