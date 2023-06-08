@@ -78,6 +78,7 @@ input[pwd-display]::placeholder{
 }
 
 .copy-btn{
+    position: relative;
     background-color: rgba(255, 255, 255, 0.25);
     display: flex;
     justify-content: center;
@@ -85,4 +86,15 @@ input[pwd-display]::placeholder{
     padding: 0 .4rem;
     border-radius: 50%;
     border: none;
+}
+
+.copy-message{
+    position: absolute;
+    top:-1.5rem;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    color: yellow;
+    font-size: 1em;
+    font-weight: 700;
+    padding: .1rem .3rem;
+    border-radius: 50px;
 }
